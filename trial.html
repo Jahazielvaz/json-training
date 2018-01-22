@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JSON PRACTICE</title>
+    <script>
+      var xmlhttp = new XMLHttpRequest();
+      var json;
+
+      xmlhttp.onreadystatechange = function(){
+        if(xmlhttp.readyState === 4 && xmlhttp.status === 200){
+          console.log('Life is good');
+        }
+      }
+
+      //NOTE: Open, initializes a request
+
+      xmlhttp.open('GET', 'people.json', true);
+      xmlhttp.send(4000);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
